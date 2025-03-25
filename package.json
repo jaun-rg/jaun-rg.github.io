@@ -17,6 +17,7 @@
     "url": "https://github.com/jaun-rg/jaun-rg.github.io/issues"
   },
   "homepage": "https://github.com/jaun-rg/jaun-rg.github.io#readme",
+  "packageManager": "pnpm@10.6.5",
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "eslint": "^9.23.0",
