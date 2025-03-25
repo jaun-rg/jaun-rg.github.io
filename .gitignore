@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnp/
+.pnp.js
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build files
+/dist
+/build
+/out
+/.next
+
+# Cache files
+.cache/
+.parcel-cache/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+logs
+*.log
+
+# Backup and temporary files
+*.swp
+*.swo
+*~
+*.bak
+.tmp/
+
+# Coverage files
+coverage/
+.nyc_output/
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Web development specific files
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+*.js.map
+
+# Dependency lock files (optional)
+package-lock.json
+# yarn.lock
+
+# Custom lock files
+*.bk
+*.bk.*
