@@ -1,0 +1,44 @@
+{
+  "name": "jaun-rg.github.io",
+  "version": "1.0.0",
+  "description": "Personal CV Website in jaun-rg.github.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaun-rg/jaun-rg.github.io.git"
+  },
+  "keywords": [],
+  "author": "Juan José Ramírez González (kraker.orion@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaun-rg/jaun-rg.github.io/issues"
+  },
+  "homepage": "https://github.com/jaun-rg/jaun-rg.github.io#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
