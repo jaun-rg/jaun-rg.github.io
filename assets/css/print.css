@@ -21,8 +21,8 @@
 
 @media print {
   @page {
-     size: 279mm 1340mm;
-     size: portrait;
+    size: 279mm 1340mm;
+    size: portrait;
   }
   .switchers {
     display: none;

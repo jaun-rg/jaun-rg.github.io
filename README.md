@@ -33,7 +33,7 @@ This repository contains my professional CV/resume website built with HTML, CSS 
     │   └── js
     │       └── change-template.js      - Theme/language switching logic
     ├── index.html                      - Main English version
-    └── spanish.html                    - Spanish translated version  
+    └── spanish.html                    - Spanish translated version
 ```
 
 ## Usage

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
   --spacing-unit: 20pt;
   --content-width: 792pt;
@@ -15,7 +14,7 @@
 }
 
 * {
-  font-family: "Comfortaa", sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-optical-sizing: auto;
   margin: 0;
   padding: 0;
@@ -23,13 +22,16 @@
   text-align: justify;
 }
 
-h1, h2, h3, .company  {
+h1,
+h2,
+h3,
+.company {
   color: var(--header-color);
-} 
+}
 
 body {
   font-style: normal;
-  font-size: var(--font-size);/*14pt*/
+  font-size: var(--font-size); /*14pt*/
   color: var(--text-color);
   max-width: var(--content-width);
   margin: 0 auto;
@@ -52,7 +54,6 @@ section {
   /* border-radius: var(--spacing-unit) var(--spacing-unit) 0 0; */
   /*border-bottom: none;*/
   padding: var(--spacing-unit) var(--spacing-unit);
-  
 }
 
 .profile-photo {
@@ -179,7 +180,7 @@ p {
 }
 
 .skills-section > ul li > ul li:not(:last-child)::after {
- content: ",";
+  content: ',';
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
 
 :root {
   --primary-color: #4b646f;
@@ -58,9 +58,9 @@ body {
 }
 
 .name {
-    font-size: 24pt;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  font-size: 24pt;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /* Contacto */
@@ -95,7 +95,6 @@ h1 {
   font-size: 20pt;
   font-weight: 700;
   margin: 20pt 0 6pt;
-
 }
 
 h2 {
