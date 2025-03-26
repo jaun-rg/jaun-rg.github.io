@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/proggy-clean?styles=9159,9160,9161');
 
 :root {
   --primary-color: #4b646f;
@@ -9,12 +9,13 @@
   --header-bg: #193038;
   --spacing-unit: 1rem;
   --content-width: 792pt;
-  --font-size: 10pt;
+  --font-size: 14pt;
   --margin-unit: 28pt;
+  --title-font-family: 'Roboto Mono', monospace;
 }
 
 * {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'ProggyCleanTTSZBP', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,10 +28,9 @@ body {
   background-color: var(--background-color);
   max-width: var(--content-width);
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
-/* Encabezado y navegación */
 .header {
   display: grid;
   grid-template-columns: 203.2pt 1fr;
@@ -63,7 +63,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Contacto */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -85,12 +84,17 @@ body {
   height: var(--font-size);
 }
 
-/* Secciones */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 section {
   margin: 0 var(--margin-unit);
 }
 
 h1 {
+  font-family: var(--title-font-family);
   color: var(--primary-color);
   font-size: 20pt;
   font-weight: 700;
@@ -98,17 +102,24 @@ h1 {
 }
 
 h2 {
+  font-family: var(--title-font-family);
   font-size: 16pt;
   font-weight: 300;
   margin: 20pt 0 6pt;
   color: var(--secondary-color);
 }
 
-/* Experiencia */
-.experience-item p:not([class]) {
-  margin: 1em;
-  margin-right: 0;
-  text-align: justify;
+.experience-item ul,
+.skills-section ul {
+  list-style: none;
+}
+
+.experience-item ul li {
+  padding: 0 30pt 10pt 0;
+}
+
+.experience-item ul li:first-child {
+  padding-top: 10pt;
 }
 
 .period {
@@ -116,33 +127,35 @@ h2 {
   font-style: italic;
 }
 
-/* Habilidades */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: block;
 }
 
 .skills-section h2 {
-  margin-bottom: 1rem;
-}
-.skills-section p {
-  margin-bottom: 0.5rem;
+  text-align: left;
 }
 
-.skills-section ul {
-  list-style-type: none;
-  padding: 0;
+.skills-section > ul li,
+.skills-section > ul li > ul {
+  text-align: left;
 }
 
-.skills-section li {
-  margin-bottom: 0.5rem;
+.skills-section > ul li {
+  padding-bottom: 1rem;
 }
 
-/* Enlaces */
-a {
-  color: inherit;
-  text-decoration: none;
+.skills-section > ul li > ul li,
+.skills-section > ul li:not(:has(> ul)) {
+  display: inline-block;
+}
+
+.skills-section > ul li:not(:has(> ul)):not(:last-child)::after {
+  content: ',';
+}
+
+.skills-section > ul li > ul li {
+  padding-bottom: 0;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {

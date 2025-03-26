@@ -14,7 +14,6 @@
 
 * {
   font-family: 'Montserrat', serif;
-  /*font-family: 'Roboto Mono', monospace;*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -128,25 +127,53 @@ p {
 .location {
   font-weight: 500;
 }
-.experience-item p:not([class]) {
-  margin-left: 10pt;
-  border-left: 1px dotted var(--border-color);
-  padding: 0 30pt 10pt 10pt;
+
+.experience-item ul,
+.skills-section ul {
+  list-style: none;
+}
+
+.experience-item ul li {
+  padding: 0 30pt 10pt 0;
+}
+
+.experience-item ul li:first-child {
+  padding-top: 10pt;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content;
+  gap: 0 2rem;
 }
 
 .skills-section h2 {
   text-align: left;
-  margin-bottom: 1rem;
 }
 
-.skills-section p {
-  margin-bottom: 0.5rem;
+.skills-section > ul,
+.skills-section > ul li,
+.skills-section > ul li > ul {
+  text-align: left;
+}
+
+.skills-section > ul li {
+  padding-bottom: 1rem;
+}
+
+.skills-section > ul li > ul li,
+.skills-section > ul li:not(:has(> ul)) {
+  display: inline-block;
+}
+
+.skills-section > ul li:not(:has(> ul)):not(:last-child)::after {
+  content: ',';
+}
+
+.skills-section > ul li > ul li {
+  font-weight: 300;
+  padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
