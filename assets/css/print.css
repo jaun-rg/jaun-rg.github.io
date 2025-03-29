@@ -1,5 +1,71 @@
+:root {
+  --body-background-color: #ecf0f5;
+}
+
+body {
+  background-color: var(--body-background-color);
+  border: 1px solid var(--border-color);
+}
+
 .hidden {
   display: none !important;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+body,
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 @media screen {
@@ -20,6 +86,12 @@
 }
 
 @media print {
+  /*
+letter  : 216mm x 279mm
+a4      : 210mm x 297mm
+legal   : 210mm 356mm
+tabloid : 279mm x 432mm
+*/
   @page {
     size: 279mm 1340mm;
     size: portrait;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --spacing-unit: 20pt;
@@ -6,51 +6,34 @@
   --border-color: #e7e9ec;
   --secondary-color: #888ab1;
   --primary-color: #7e81ab;
-  --text-color: #4b646f;
-  --header-color: #000;
-  --background-color: #f4f2ee;
+  --text-color: #000000;
+  --background-color: #ecf0f5;
   --main-margin: 27pt;
   --font-size: 10pt;
 }
 
 * {
-  font-family: 'Comfortaa', sans-serif;
-  font-optical-sizing: auto;
+  font-family: 'Montserrat', serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: justify;
 }
 
-h1,
-h2,
-h3,
-.company {
-  color: var(--header-color);
-}
-
 body {
   font-style: normal;
-  font-size: var(--font-size); /*14pt*/
+  font-size: var(--font-size);
   color: var(--text-color);
   max-width: var(--content-width);
   margin: 0 auto;
-  line-height: /*1.1*/ 1.5;
-
-  /* background-color: var(--background-color);*/
+  line-height: 1.5;
+  background-color: var(--background-color);
 }
 
-header,
-main,
-footer {
+.profile,
+nav,
+section {
   background-color: #fff;
-  padding: 0 var(--main-margin);
-}
-
-header,
-footer {
-  padding-top: var(--main-margin);
-  padding-bottom: var(--main-margin);
 }
 
 a {
@@ -61,31 +44,36 @@ a {
 section {
   margin: var(--spacing-unit) var(--main-margin);
   border: 1px solid var(--border-color);
-  border-radius: 5pt;
-  padding: var(--spacing-unit);
+  border-radius: var(--spacing-unit) var(--spacing-unit);
+  padding: 0 20pt 20pt /*var(--spacing-unit)*/;
 }
 
 h1 {
   font-size: 20pt;
   font-weight: 700;
-  margin: var(--spacing-unit) 0 6pt;
+  margin: 20pt 0 6pt;
 }
 
 h2 {
   font-size: 16pt;
   font-weight: 500;
-  margin: var(--spacing-unit) 0 6pt;
+  margin: 20pt 0 6pt;
 }
 
 p {
+  font-size: 10pt;
   padding-bottom: 0.5rem;
 }
 
 .profile {
   display: grid;
   grid-template-columns: 203.2pt 1fr;
-  margin: 0;
-  padding: 0 var(--main-margin);
+  margin: var(--main-margin) var(--main-margin) 0;
+  padding: var(--spacing-unit);
+  border: 1px solid var(--border-color);
+  border-radius: var(--spacing-unit) var(--spacing-unit) 0 0;
+  border-bottom: none;
+  padding: var(--spacing-unit) var(--spacing-unit);
 }
 
 .profile-photo {
@@ -103,7 +91,7 @@ p {
 .name {
   font-size: 24pt;
   font-weight: 700;
-  /*margin-bottom: var(--spacing-unit);*/
+  margin-bottom: var(--spacing-unit);
 }
 
 .contact-grid {
@@ -112,6 +100,9 @@ p {
   gap: var(--spacing-unit);
   margin: 0 var(--main-margin) var(--spacing-unit);
   padding: var(--spacing-unit);
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 var(--spacing-unit) var(--spacing-unit);
+  border-top: none;
 }
 
 .contact-item {
@@ -127,20 +118,8 @@ p {
   height: var(--font-size);
 }
 
-#summary,
-#experience {
-  margin-bottom: 0;
-}
-
-#experience,
-#education {
-  margin-top: 0;
-}
-
-.period {
-  color: var(--secondary-color);
-}
-
+.period,
+.company,
 .location {
   color: var(--secondary-color);
 }
@@ -156,9 +135,7 @@ p {
 }
 
 .experience-item ul li {
-  margin-left: 10pt;
-  border-left: 1px dotted var(--border-color);
-  padding: 0 30pt 10pt 0.5rem;
+  padding: 0 30pt 10pt 0;
 }
 
 .experience-item ul li:first-child {
@@ -176,26 +153,28 @@ p {
   text-align: left;
 }
 
+.skills-section > ul,
 .skills-section > ul li,
 .skills-section > ul li > ul {
   text-align: left;
 }
 
 .skills-section > ul li {
-  font-weight: bold;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.skills-section > ul li > ul li,
+.skills-section > ul li:not(:has(> ul)) {
+  display: inline-block;
+}
+
+.skills-section > ul li:not(:has(> ul)):not(:last-child)::after {
+  content: ',';
 }
 
 .skills-section > ul li > ul li {
-  white-space: nowrap;
-  display: inline-block;
-  font-weight: lighter;
-  font-size: 8pt;
+  font-weight: 300;
   padding-bottom: 0;
-}
-
-.skills-section > ul li > ul li:not(:last-child)::after {
-  content: ',';
 }
 
 @media (max-width: 768px) {

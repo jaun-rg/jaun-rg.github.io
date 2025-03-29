@@ -14,69 +14,50 @@
       href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
     />
     <link rel="stylesheet" href="assets/css/print.css" />
-    <link id="themeLink" rel="stylesheet" href="assets/css/style-4.css" />
+    <link id="themeLink" rel="stylesheet" href="" />
     <script src="assets/js/change-template.js" defer></script>
   </head>
 
   <body>
-    <div class="switchers noPrint">
-      <select
-        id="languageSelect"
-        class="noPrint"
-        onchange="changeLanguage(this.value)"
-      >
-        <option value="english" selected>English</option>
-        <option value="spanish">Spanish</option>
-      </select>
-      <select
-        id="themeSelect"
-        class="noPrint"
-        onchange="changeTheme(this.value)"
-      >
-        <option value="style-1">Theme 1</option>
-        <option value="style-2">Theme 2</option>
-        <option value="style-3">Theme 3</option>
-        <option value="style-4">Theme 4</option>
-      </select>
-    </div>
     <header class="header">
-      <div class="profile-photo">
-        <img
-          src="assets/images/image4.png"
-          alt="Profile Photo"
-          loading="lazy"
-        />
+      <div class="profile">
+        <div class="profile-photo">
+          <img
+            src="assets/images/image4.png"
+            alt="Profile Photo"
+            loading="lazy"
+          />
+        </div>
+        <div class="profile-info">
+          <h1 class="name">JUAN JOSÉ RAMÍREZ GONZÁLEZ</h1>
+          <!-- <p>02/25/1988</p> -->
+          <p>
+            Cloud Solutions Architect | DevSecOps | Infrastructure | Developer |
+            QA Tester | Ecommerce Manager
+          </p>
+        </div>
       </div>
-      <div class="profile-info">
-        <h1 class="name">JUAN JOSÉ RAMÍREZ GONZÁLEZ</h1>
-        <!-- <p>02/25/1988</p> -->
-        <p>
-          Cloud Solutions Architect | DevSecOps | Infrastructure | Developer |
-          QA Tester | Ecommerce Manager
-        </p>
-      </div>
-    </header>
+      <nav class="contact-grid">
+        <div class="contact-item">
+          <i class="hgi hgi-stroke hgi-mail-at-sign-02"></i>
+          <a href="mailto:kraker.orion@gmail.com">kraker.orion@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="hgi hgi-stroke hgi-location-01"></i>
+          <span>Mexico City, Mexico</span>
+        </div>
+        <div class="contact-item">
+          <i class="hgi hgi-stroke hgi-telephone"></i>
+          <a href="tel:+525534854264">+52 55 34 85 42 64</a>
+        </div>
+        <div class="contact-item">
+          <i class="hgi hgi-stroke hgi-linkedin-02"></i>
+          <a href="https://www.linkedin.com/in/jaunrg"
+            >linkedin.com/in/jaunrg</a
+          >
+        </div>
+      </nav>
 
-    <nav class="contact-grid">
-      <div class="contact-item">
-        <i class="hgi hgi-stroke hgi-mail-at-sign-02"></i>
-        <a href="mailto:kraker.orion@gmail.com">kraker.orion@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <i class="hgi hgi-stroke hgi-location-01"></i>
-        <span>Mexico City, Mexico</span>
-      </div>
-      <div class="contact-item">
-        <i class="hgi hgi-stroke hgi-telephone"></i>
-        <a href="tel:+525534854264">+52 55 34 85 42 64</a>
-      </div>
-      <div class="contact-item">
-        <i class="hgi hgi-stroke hgi-linkedin-02"></i>
-        <a href="https://www.linkedin.com/in/jaunrg">linkedin.com/in/jaunrg</a>
-      </div>
-    </nav>
-
-    <main>
       <section id="summary">
         <h1>SUMMARY</h1>
         <p>
@@ -88,7 +69,9 @@
           scalability.
         </p>
       </section>
+    </header>
 
+    <main>
       <section id="experience">
         <h1>EXPERIENCE</h1>
 
@@ -260,7 +243,7 @@
           <h2 class="positon">Developer, Ecommerce Project Manager</h2>
           <p class="company">Umvel (formerly Jaque Estratégico)</p>
           <p class="location">Mexico City</p>
-          <p class="period">June 2014 - November 2016</p>
+          <p class="period">June 2014 - November 2015</p>
           <ul>
             <li>
               Responsible for managing and developing ecommerce projects,
@@ -331,7 +314,8 @@
           </ul>
         </article>
       </section>
-
+    </main>
+    <footer>
       <section id="education">
         <h1>EDUCATION</h1>
         <h2>Faculty of Sciences, UNAM</h2>
@@ -616,6 +600,6 @@
           </div>
         </div>
       </section>
-    </main>
+    </footer>
   </body>
 </html>
