@@ -66,6 +66,9 @@ body,
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @media screen {

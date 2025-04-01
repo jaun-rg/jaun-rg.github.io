@@ -76,9 +76,6 @@ p {
   padding: var(--spacing-unit) var(--spacing-unit);
 }
 
-.profile-photo {
-}
-
 .profile-photo img {
   height: 140px;
   width: auto;

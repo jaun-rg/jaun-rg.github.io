@@ -76,9 +76,6 @@ p {
   padding: var(--spacing-unit) var(--spacing-unit);
 }
 
-.profile-photo {
-}
-
 .profile-photo img {
   height: 140px;
   width: auto;
@@ -163,11 +160,9 @@ p {
   .header {
     grid-template-columns: 1fr;
   }
-
   .contact-grid {
     grid-template-columns: 1fr 1fr;
   }
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
