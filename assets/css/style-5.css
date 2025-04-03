@@ -120,17 +120,15 @@ nav,
   width: 40%;
   float: right;
   text-align: left;
-  padding: 20pt 0 0 60pt;
+  padding-left: 2rem;
 }
 
 .profile-photo img {
-  height: auto;
-  width: 40%;
+  height: 8rem;
+  width: auto;
 }
 
-.profile-info,
-.contact-grid,
-#summary {
+.profile-info {
   width: 50%;
   margin-left: 10%;
 }
@@ -148,6 +146,7 @@ nav,
 }
 
 .contact-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-unit);

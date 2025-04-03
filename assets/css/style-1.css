@@ -27,6 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: justify;
+  color: var(--text-color);
 }
 
 h1 {
@@ -177,8 +178,7 @@ nav,
 }
 
 .experience-item {
-  color: #fff;
-  background-color: #008046;
+  background-color: var(--experience-color);
 }
 
 .position,
@@ -186,18 +186,23 @@ nav,
 .company,
 .reference,
 .location {
-  background-color: var(--experience-color);
   padding: 0 var(--spacing-unit);
   margin: 0;
 }
-.experience-item > ul {
-  background-color: (0, 0, 0, 0.125);
+.experience-item > ul,
+.education-item > p,
+.skills-section > ul {
+  background-color: var(--dark-opacity);
 }
-.experience-item > ul > li:not(:last-child) {
+.experience-item > ul > li:not(:last-child),
+.skills-section > ul > li:not(:last-child) {
   border-bottom: 1px solid var(--border-color);
 }
 
-.position {
+.position,
+.education-item h2,
+.language-item h2,
+.skills-section h2 {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 1rem var(--spacing-unit);
@@ -215,8 +220,10 @@ nav,
   padding-bottom: var(--spacing-unit);
 }
 
-.experience-item ul {
+.experience-item > ul > li,
+.skills-section > ul > li {
   margin: 0 var(--spacing-unit);
+  padding: 1rem;
 }
 
 .experience-item ul,
@@ -224,21 +231,19 @@ nav,
   list-style: none;
 }
 
-.experience-item > ul > li {
-  padding: 1rem;
-  background-color: transparent;
-}
-
-footer section {
+footer > section {
   margin: var(--main-margin) var(--main-margin) var(--main-margin) 0;
 }
-footer section article,
-.skills-section {
-  padding: var(--spacing-unit);
+
+.education-item p,
+.language-item p {
+  padding: 1rem;
 }
-footer article *,
-.skills-section * {
-  color: #fff;
+.education-item p:first-child {
+  padding-bottom: 0;
+}
+.education-item .period {
+  padding-top: 0;
 }
 
 #education h1,
@@ -249,12 +254,6 @@ footer article *,
   text-align: left;
   margin: 0;
   margin-bottom: var(--spacing-unit);
-}
-
-#education h2,
-#language h2,
-#skills h2 {
-  padding: 1rem 0;
 }
 
 #education h2,
@@ -284,6 +283,7 @@ footer article *,
 }
 
 .skills-section > ul > li:has(> ul) {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 

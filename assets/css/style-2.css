@@ -7,10 +7,9 @@
   --secondary-color: #888ab1;
   --primary-color: #7e81ab;
   --text-color: #000000;
-  --background-color: #f4f2ee;
   --main-margin: 27pt;
   --font-size: 10pt;
-  --body-background-color: #fff;
+  --background-color: #fff;
 }
 
 * {
@@ -33,16 +32,14 @@ body {
   color: var(--text-color);
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-unit);
   line-height: 1.2;
 }
 
-body nav,
+header,
 main,
-footer,
-.profile,
-#summary {
-  background-color: #fff;
+footer {
+  background-color: var(--background-color);
+  padding: 0 var(--main-margin);
 }
 
 a {
